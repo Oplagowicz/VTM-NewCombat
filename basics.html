@@ -1,0 +1,236 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title  data-en="WoD: The Struggle" data-ru="Мир Тьмы: Схватка">Мир Тьмы: Схватка</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <link href="./style.css" rel="stylesheet">
+    <link href="./cards.css" rel="stylesheet">
+    
+</head>
+<body>
+
+     <!-- Header Верхняя часть сайта с символом Камарильи и панелью навигации-->
+     <section id="header" class="container-fluid d-flex flex-column flex-lg-row justify-content-between align-items-center">
+        <div class="ankh-container col-lg-2 d-flex justify-content-center mt-2">
+            <img class="ankh" src="./images/AnkhNew.png">
+        </div>
+        <nav class="nav-buttons col-lg-10 d-flex flex-column align-items-center">
+            <div class="main-nav d-flex flex-wrap gap-4 fs-xl-1 fs-lg-2 fs-3 justify-content-center mb-3 ">
+                <a href="./index.html"><button data-en="Main Page" data-ru="Главная Страница">Главная Страница</button></a>
+                <a href="./index.html"><button data-en="Main Page" data-ru="Главная Страница">Главная Страница</button></a>
+                <a href="./index.html"><button data-en="Main Page" data-ru="Главная Страница">Главная Страница</button></a>
+                <a href="./index.html"><button data-en="Main Page" data-ru="Главная Страница">Главная Страница</button></a>
+                <a href="./index.html"><button data-en="Main Page" data-ru="Главная Страница">Главная Страница</button></a>
+            </div>
+            <div class="language-switcher mt-auto">
+                <button class="lang-btn" onclick="toggleLanguage()" data-en="Русский" data-ru="English">English</button>
+            </div>  
+        </nav>
+    </section>
+
+    <section id="main">
+        <!-- Main Основная часть страницы с текстами или пречислением приемов -->
+        <div id="quote" class="text d-flex flex-wrap justify-content-end align-items-end ms-auto me-4 my-4">
+                <h2><q data-en="Valor withers without adversity." data-ru="Без противника чахнет и добродетель.">Без противника чахнет и добродетель…</q></h2>
+                <h3 data-en="— Seneca the Younger" data-ru="— Луций Анней Сенека">— Луций Анней Сенека</h3>            
+        </div>
+
+        <div class="card-body">
+
+            <div id="one" class="card-item text-center">         
+                <div id="block" class="card">
+                    <div class="inner-card">
+                        <div class="card-face front">
+                            <img src="./Карты Действий/Блок.webp">
+                        </div>
+                        <div class="card-face back">
+                            <img src="./Карты Действий/Блок.webp">
+                        </div>
+                    </div>
+                </div>
+                <p class="card-title text-center" data-en="Block" data-ru="Блок">Блок</p> 
+
+                <div class="popover-content" style="display: none;">
+                    <ul>
+                        <li>Требования: Ничего</li>
+                        <li>Очки Мощи: Ничего</li>
+                    </ul>
+                        
+                    <p>    
+                        Описание: Базовый защитный прием, представляющий из себя преграждение доступа атаке оппонента к уязвимым точкам тела персонажа, обычно кистью или предплечьем. 
+                    </p>
+                    <p>
+                        Система: При использовании персонажем Блока, значение Уклонения добавляется к Выносливости на броске поглощения урона. Вместе с тем, некоторые атаки, например, Захват, игнорируют бонус Блока, посему урон, нанесенный ими, может быть поглощен только Выносливостью персонажа.
+                    </p>
+                    <p>
+                        Блок создает и два иных эффекта. Первый - на протяжении хода после использования персонажем Блока, следующий после Блока прием получает +2 к Инициативе. Это отражает особенность правильно поставленного блока - быть стартовым положением для большей части рукопашных ударов. Таким образом персонаж может контратаковать из защитной стойки быстрее, чем из положения завершения атакующего приема. Второй - Блок не допускает отправку персонажа в Нокдаун любой атакой, за исключением атак, игнорирующих Блок, например, Захвата.
+                    </p>
+                    <p>
+                        Блоком нельзя заблокировать атаку с использованием оружия. Для этого персонаж должен использовать специальный Продвинутый Прием или, с использованием оружия, Оружейный Прием. Блок может быть разыгран, как Прием Отмена.
+                    </p>
+                    <ul>
+                        <li>Стоимость: Ничего</li>
+                        <li>Инициатива: +4</li>
+                        <li>Точность: Ничего</li>
+                        <li>Урон: Ничего</li>
+                        <li>Передвижение: +0</li>
+                    </ul>
+                    <button class="close-popover">Закрыть</button>
+                </div>
+            </div>
+
+            <div id="two" class="card-item text-center">         
+                <div id="dodge" class="card">
+                    <div class="inner-card">
+                        <div class="card-face front">
+                            <img src="./Карты Действий/Уворот.webp">
+                        </div>
+                        <div class="card-face back">
+                            <img src="./Карты Действий/Уворот.webp">
+                        </div>
+                    </div>
+                </div>
+                <p class="card-title text-center" data-en="Dodge" data-ru="Уклонение">Уклонение</p> 
+
+                <div class="popover-content" style="display: none;">
+                    <p>Описание карточки "Блок": защищает от атак.</p>
+                    <button class="close-popover">Закрыть</button>
+                </div>
+            </div>
+
+            <div id="three" class="card-item text-center">         
+                <div id="grapple" class="card">
+                    <div class="inner-card">
+                        <div class="card-face front">
+                            <img src="./Карты Действий/Захват1.jpg">
+                        </div>
+                        <div class="card-face back">
+                            <img src="./Карты Действий/Захват1.jpg">
+                        </div>
+                    </div>
+                </div>
+                <p class="card-title text-center" data-en="Grapple" data-ru="Захват">Захват</p> 
+
+                <div class="popover-content" style="display: none;">
+                    <p>Описание карточки "Блок": защищает от атак.</p>
+                    <button class="close-popover">Закрыть</button>
+                </div>
+            </div>
+
+            <div id="four" class="card-item text-center">         
+                <div id="heavy-kick" class="card">
+                    <div class="inner-card">
+                        <div class="card-face front">
+                            <img src="./Карты Действий/Сильный Пинок.webp">
+                        </div>
+                        <div class="card-face back">
+                            <img src="./Карты Действий/Сильный Пинок.webp">
+                        </div>
+                    </div>
+                </div>
+                <p class="card-title text-center" data-en="Heavy Kick" data-ru="Сильный Пинок">Сильный Пинок</p> 
+
+                <div class="popover-content" style="display: none;">
+                    <p>Описание карточки "Блок": защищает от атак.</p>
+                    <button class="close-popover">Закрыть</button>
+                </div>
+            </div>
+
+            <div id="five" class="card-item text-center">         
+                <div id="heavy-strike" class="card">
+                    <div class="inner-card">
+                        <div class="card-face front">
+                            <img src="./Карты Действий/Сильный Удар1.webp">
+                        </div>
+                        <div class="card-face back">
+                            <img src="./Карты Действий/Сильный Удар1.webp">
+                        </div>
+                    </div>
+                </div>
+                <p class="card-title text-center" data-en="Heavy Strike" data-ru="Сильный Удар">Сильный Удар</p> 
+
+                <div class="popover-content" style="display: none;">
+                    <p>Описание карточки "Блок": защищает от атак.</p>
+                    <button class="close-popover">Закрыть</button>
+                </div>
+            </div>
+
+            <div id="six" class="card-item text-center">         
+                <div id="quick-kick" class="card">
+                    <div class="inner-card">
+                        <div class="card-face front">
+                            <img src="./Карты Действий/Быстрый Пинок.webp">
+                        </div>
+                        <div class="card-face back">
+                            <img src="./Карты Действий/Быстрый Пинок.webp">
+                        </div>
+                    </div>
+                </div>
+                <p class="card-title text-center" data-en="Quick Kick" data-ru="Быстрый Пинок">Быстрый Пинок</p> 
+
+                <div class="popover-content" style="display: none;">
+                    <p>Описание карточки "Блок": защищает от атак.</p>
+                    <button class="close-popover">Закрыть</button>
+                </div>
+            </div>
+
+            <div id="seven" class="card-item text-center">         
+                <div id="quick-kick" class="card">
+                    <div class="inner-card">
+                        <div class="card-face front">
+                            <img src="./Карты Действий/Быстрый удар.webp">
+                        </div>
+                        <div class="card-face back">
+                            <img src="./Карты Действий/Быстрый удар.webp">
+                        </div>
+                    </div>
+                </div>
+                <p class="card-title text-center" data-en="Quick Strike" data-ru="Быстрый удар">Быстрый удар</p> 
+
+                <div class="popover-content" style="display: none;">
+                    <p>Описание карточки "Блок": защищает от атак.</p>
+                    <button class="close-popover">Закрыть</button>
+                </div>
+            </div>
+
+            <div id="eight" class="card-item text-center">         
+                <div id="sprint" class="card">
+                    <div class="inner-card">
+                        <div class="card-face front">
+                            <img src="./Карты Действий/Спринт1.jpg">
+                        </div>
+                        <div class="card-face back">
+                            <img src="./Карты Действий/Спринт1.jpg">
+                        </div>
+                    </div>
+                </div>
+                <p class="card-title text-center" data-en="Sprint" data-ru="Спринт">Спринт</p> 
+
+                <div class="popover-content" style="display: none;">
+                    <p>Описание карточки "Блок": защищает от атак.</p>
+                    <button class="close-popover">Закрыть</button>
+                </div>
+
+            </div>
+
+        </div>
+
+    <section id="footer">
+        <div class="ankh-container col-lg-2 d-flex justify-content-center mt-2">
+            <img class="ankh" src="./images/SabbatAnkhNew.png">
+        </div>
+        <footer class="text mx-4 my-2"
+        data-en="© 2024 Sparklines Group. This site is created by a fan and intended for non-commercial use only. All rights to the original content and materials related to the World of Darkness belong to their respective copyright holders." 
+        data-ru="© 2024 Sparklines Group. Этот сайт создан фанатом и предназначен исключительно для некоммерческого использования. Все права на оригинальный контент и материалы, связанные с Миром Тьмы, принадлежат их законным правообладателям."> 
+            © 2024 Sparklines Group. Этот сайт создан фанатом и предназначен исключительно для личного и некоммерческого использования. Все права на оригинальный контент и материалы, связанные с Миром Тьмы, принадлежат их законным правообладателям. 
+        </footer>
+
+    </section>
+
+
+
+    <script src="script.js"></script>
+</body>
+</html>
