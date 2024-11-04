@@ -6,8 +6,8 @@
         /* Возможно позже поменять с body на другой селектор, более локальный */
         body {
             background: linear-gradient(300deg, #DB0108, #752F31, #000000);
-            background-size: 400% 10%;
-            animation: gradient-animation 18s ease infinite;
+            background-size: 600% 10%;
+            animation: gradient-animation 25s ease infinite;
         }
 
         @keyframes gradient-animation {
@@ -87,11 +87,45 @@
             transition: all 1.5s;
       }
 
-
-
         .lang-btn {
           width: 150px;
           height: 40px;
           font-size: 1em;
           justify-content: start;
       }
+
+      .text {
+        color: #F5F5F5;
+        text-shadow: 
+        -2px -2px 0 #000,  
+         2px -2px 0 #000,
+        -2px  2px 0 #000,
+         2px  2px 0 #000;
+        font-family: "TypeWriter", sans-serif;
+        font-weight: bold;
+      }
+
+      #quote {
+        width: 50%;
+        margin: 0 auto; /* Центрирует quote */
+        padding: 10px; /* Внутренние отступы */
+      }
+
+      .text-main {
+        width: 80%;
+        font-size: 20px;
+        margin: 0 auto;
+      }
+
+      @media (max-width: 767px) {
+        #quote {
+            width: 90%;
+            padding: 10px;
+        }
+    
+        .text-main {
+            width: 90%;
+            padding: 10px;
+            margin: 10px 0;
+        }
+    }
