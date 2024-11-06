@@ -26,23 +26,26 @@ function toggleLanguage() {
         return;
     }
 
-    // Открытие модального окна при клике на карточку
     card.addEventListener("click", (event) => {
-        // Проверяем, что клик происходит на карточке, а не на кнопке "Закрыть"
-        if (!event.target.classList.contains("close-modal")) {
-            // Скрыть все другие модальные окна
-            document.querySelectorAll(".modal-overlay").forEach(modal => {
-                modal.style.display = "none";
-            });
-            // Открыть текущее модальное окно
-            modalOverlay.style.display = "flex";
-        }
-    });
+      // Проверяем, что клик происходит на карточке, а не на кнопке "Закрыть"
+      const currentDisplay = modalOverlay.style.display; // Сохраняем текущее значение display
+      
+      if (!event.target.classList.contains("close-modal")) {
+          // Скрываем все другие модальные окна
+          document.querySelectorAll(".modal-overlay").forEach(modal => {
+              modal.style.display = "none";
+          });
+  
+          // Проверяем значение и, если оно не "flex", то устанавливаем "flex"
+          if (currentDisplay !== "flex") {
+              modalOverlay.style.display = "flex";
+          }
+      }
+  });
 
-    // Закрытие модального окна при клике на кнопку "Закрыть" или на оверлей
-    closeModalBtn.addEventListener("click", (event) => {
-        event.stopPropagation(); // Останавливаем всплытие события
-        modalOverlay.style.display = "none";
-    });
+  // Добавляем обработчик события на кнопку закрытия
+closeModalBtn.addEventListener("click", () => {
+  modalOverlay.style.display = "none"; // Закрываем текущее модальное окно
+});
 
 });
