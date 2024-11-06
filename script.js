@@ -17,28 +17,32 @@ function toggleLanguage() {
   }
   
   document.querySelectorAll(".card-item").forEach((card) => {
-    const popover = card.querySelector(".popover-content");
-    const closeBtn = card.querySelector(".close-popover");
+    const modalOverlay = card.querySelector(".modal-overlay");
+    const closeModalBtn = card.querySelector(".close-modal");
 
-    // Проверка на существование поповера и кнопки
-    if (!popover || !closeBtn) {
-        console.log("Popover или кнопка закрытия не найдены в:", card);
+    // Проверка на существование модального окна и кнопки закрытия
+    if (!modalOverlay || !closeModalBtn) {
+        console.log("Модальное окно или кнопка закрытия не найдены в:", card);
         return;
     }
 
-    // Открытие поповера при клике на карточку
+    // Открытие модального окна при клике на карточку
     card.addEventListener("click", (event) => {
         // Проверяем, что клик происходит на карточке, а не на кнопке "Закрыть"
-        if (!event.target.classList.contains("close-popover")) {
-            popover.style.display = "block";
-            console.log("Поповер открыт для:", card);
+        if (!event.target.classList.contains("close-modal")) {
+            // Скрыть все другие модальные окна
+            document.querySelectorAll(".modal-overlay").forEach(modal => {
+                modal.style.display = "none";
+            });
+            // Открыть текущее модальное окно
+            modalOverlay.style.display = "flex";
         }
     });
 
-    // Закрытие поповера при клике на кнопку закрытия
-    closeBtn.addEventListener("click", (event) => {
+    // Закрытие модального окна при клике на кнопку "Закрыть" или на оверлей
+    closeModalBtn.addEventListener("click", (event) => {
         event.stopPropagation(); // Останавливаем всплытие события
-        popover.style.display = "none";
-        console.log("Поповер закрыт для:", card);
+        modalOverlay.style.display = "none";
     });
+
 });
