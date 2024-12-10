@@ -19,6 +19,8 @@ function toggleLanguage() {
   document.querySelectorAll(".card-item").forEach((card) => {
     const modalOverlay = card.querySelector(".modal-overlay");
     const closeModalBtn = card.querySelector(".close-modal");
+    const modalContent = card.querySelector(".modal-content");
+
 
     // Проверка на существование модального окна и кнопки закрытия
     if (!modalOverlay || !closeModalBtn) {
@@ -46,6 +48,13 @@ function toggleLanguage() {
   // Добавляем обработчик события на кнопку закрытия
 closeModalBtn.addEventListener("click", () => {
   modalOverlay.style.display = "none"; // Закрываем текущее модальное окно
+}); 
+
+modalOverlay.addEventListener("click", (event) => {
+  // Проверяем, что клик произошел вне modal-content
+  if (modalContent.contains(event.target)) {
+      modalOverlay.style.display = "none";
+  }
 });
 
 });
