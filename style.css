@@ -5,8 +5,8 @@
         
         /* Возможно позже поменять с body на другой селектор, более локальный */
         body {
-            background: linear-gradient(300deg, #DB0108, #752F31, #000000);
-            background-size: 600% 10%;
+            background: linear-gradient(300deg, #8A0007, #752F31, #000000);
+            background-size: 500% 100%;
             animation: gradient-animation 14s ease infinite;
         }
 
@@ -104,6 +104,9 @@
         2px 2px black,
         0px 0px black,
         0px 2px black,
+        -1px 0px black,
+        0px -1px black,
+        -1px -1px black,
         0 0 1.5em black, 
         0 0 1em black;
         font-family: "TypeWriter", sans-serif;
