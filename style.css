@@ -100,17 +100,22 @@
       .text {
         color: #F5F5F5;
         text-shadow: 
-        2px 2px 5px black, 
-        0 0 1em black, 
+        2px 0px black,
+        2px 2px black,
+        0px 0px black,
+        0px 2px black,
+        0 0 1.5em black, 
         0 0 1em black;
         font-family: "TypeWriter", sans-serif;
       }
 
       .text-title {
+        font-weight: bolder;
         font-size: 33px;
       }
 
       .text-title-mini {
+        font-weight: bolder;
         font-size: 28px;
       }
 
