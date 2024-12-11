@@ -26,13 +26,7 @@
     margin-top: 2px;
     text-align: center;
     font-size: 30px;
-    color: #F5F5F5;
-    text-shadow: 
-        -2px -2px 0 #000,  
-         2px -2px 0 #000,
-        -2px  2px 0 #000,
-         2px  2px 0 #000;
-    font-family: "TypeWriter", sans-serif;
+
 }
 .card {
     height: 250px;
@@ -110,12 +104,6 @@ ul {
     max-width: auto;
     width: 50%;
     color: #CACACA;
-    text-shadow: 
-        -2px -2px 0 #000,  
-         2px -2px 0 #000,
-        -2px  2px 0 #000,
-         2px  2px 0 #000;
-    font-family: "TypeWriter", sans-serif;
     font-size: 18px;
     text-align: center;
     position: relative;

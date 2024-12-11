@@ -94,15 +94,24 @@
           justify-content: start;
       }
 
+      /* white text #F5F5F5*/
+      
+
       .text {
         color: #F5F5F5;
         text-shadow: 
-        -2px -2px 0 #000,  
-         2px -2px 0 #000,
-        -2px  2px 0 #000,
-         2px  2px 0 #000;
+        2px 2px 5px black, 
+        0 0 1em black, 
+        0 0 1em black;
         font-family: "TypeWriter", sans-serif;
-        
+      }
+
+      .text-title {
+        font-size: 33px;
+      }
+
+      .text-title-mini {
+        font-size: 28px;
       }
 
       #quote {
