@@ -1,20 +1,28 @@
+document.addEventListener("DOMContentLoaded", () => {
+  const savedLanguage = localStorage.getItem("currentLanguage") || "ru";
+  document.documentElement.setAttribute("lang", savedLanguage);
+  changeLanguage(savedLanguage);
+});
+
 function toggleLanguage() {
-    const htmlTag = document.documentElement;
-    const currentLanguage = htmlTag.getAttribute('lang');
+  const htmlTag = document.documentElement;
+  const currentLanguage = htmlTag.getAttribute("lang");
   
-    const newLanguage = currentLanguage === 'en' ? 'ru' : 'en';
-    htmlTag.setAttribute('lang', newLanguage);
+  const newLanguage = currentLanguage === "en" ? "ru" : "en";
+  htmlTag.setAttribute("lang", newLanguage);
+
+  localStorage.setItem("currentLanguage", newLanguage);
+
+  changeLanguage(newLanguage);
+}
+
+function changeLanguage(language) {
+  const elements = document.querySelectorAll("[data-en][data-ru]");
   
-    changeLanguage(newLanguage);
-  }
-  
-  function changeLanguage(language) {
-    const elements = document.querySelectorAll('[data-en][data-ru]');
-  
-    elements.forEach(element => {
-      element.textContent = element.getAttribute(`data-${language}`);
-    });
-  }
+  elements.forEach(element => {
+    element.textContent = element.getAttribute(`data-${language}`);
+  });
+}
   
   document.querySelectorAll(".card-item").forEach((card) => {
     const modalOverlay = card.querySelector(".modal-overlay");
