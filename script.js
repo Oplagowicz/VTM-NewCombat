@@ -20,7 +20,7 @@ function changeLanguage(language) {
   const elements = document.querySelectorAll("[data-en][data-ru]");
   
   elements.forEach(element => {
-    element.textContent = element.getAttribute(`data-${language}`);
+    element.innerHTML = element.getAttribute(`data-${language}`);
   });
 }
   
