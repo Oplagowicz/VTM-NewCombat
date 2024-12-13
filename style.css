@@ -120,8 +120,12 @@
       }
 
       .text-title-mini {
+        display: flex;
+        justify-content: center;
+        align-items: center;
         font-weight: bolder;
         font-size: 28px;
+        margin: 15px;
       }
 
       #quote {
@@ -134,6 +138,13 @@
         width: 80%;
         font-size: 22px;
         margin: 0 auto;
+      }
+
+      .info {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: center;
       }
       
       a {
