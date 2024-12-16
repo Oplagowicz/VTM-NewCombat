@@ -82,8 +82,10 @@
                                 Блоком нельзя заблокировать атаку с использованием оружия. Для этого персонаж должен использовать специальный Продвинутый Прием или, с использованием оружия, Оружейный Прием. Блок может быть разыгран, как Прием Отмена.
                             </p>
                             <ul>
+                                <li data-en="Roll: Stamina + Dodge to reduce damage" data-ru="Параметр: Выносливость + Уворот на понижание урона">Проверка: Выносливость + Уворот на понижание урона</li>
                                 <li data-en="Cost: None" data-ru="Стоимость: Ничего">Стоимость: Ничего</li>
                                 <li data-en="Initiative: +4" data-ru="Инициатива: +4">Инициатива: +4</li>
+                                <li data-en="Difficulty: Standard"  data-ru="Сложность: Стандарт">Сложность: Стандарт</li>
                                 <li data-en="Accuracy: None" data-ru="Точность: Ничего">Точность: Ничего</li>
                                 <li data-en="Damage: None" data-ru="Урон: Ничего">Урон: Ничего</li>
                                 <li data-en="Move: +0" data-ru="Передвижение: +0">Передвижение: +0</li>
@@ -136,8 +138,10 @@
                                 </p>
 
                                 <ul>
+                                    <li data-en="Roll: Dexterity + Dodge" data-ru="Проверка: Ловкость + Уворот"> Проверка: Ловкость + Уворот </li>
                                     <li data-en="Cost: None" data-ru="Стоимость: Ничего">Стоимость: Ничего</li>
                                     <li data-en="Initiative: +6" data-ru="Инициатива: +6">Инициатива: +6</li>
+                                    <li data-en="Difficulty: Standard" data-ru="Сложность: Стандарт">Сложность: Стандарт</li>
                                     <li data-en="Accuracy: None" data-ru="Точность: Ничего">Точность: Ничего</li>
                                     <li data-en="Damage: None" data-ru="Урон: Ничего">Урон: Ничего</li>
                                     <li data-en="Move: +1" data-ru="Передвижение: +1">Передвижение: +1</li>
@@ -173,18 +177,53 @@
                                 <p data-en="Description:" data-ru="Описание:">    
                                     Описание:
                                 </p>
-                                    <p data-en="A simple grab and squeeze attack." data-ru="Базовый захват с выходом в болевой-ущемление.">
-                                        Базовый захват с выходом в болевой-ущемление.
+                                    <p data-en="The grapple is a crude yet effective maneuver.  It allows you to subdue your opponent, breaking their resistance and locking them in an unyielding hold. 
+                                    This maneuver has two modes: simple restraint to immobilize the target and clinch when the struggle turns into a brutal exchange of blows." 
+                                        data-ru="Захват — грубый, но эффективный манёвр. Этот приём позволяет не убить противника, а сломить его сопротивление и удержать в железной хватке.
+                                        Манёвр делится на два режима: простое удержание для обездвиживания цели и клинч, когда дело доходит до грубой физической расправы.">
+                                        Захват — грубый, но эффективный манёвр. Этот приём позволяет не убить противника, а сломить его сопротивление и удержать в железной хватке.
+                                        Манёвр делится на два режима: простое удержание для обездвиживания цели и клинч, когда дело доходит до грубой физической расправы
                                     </p>
 
-                                <p data-en="System:" data-ru="Система:">
-                                    Система:
-                                </p>
+                                <p data-en="System: " data-ru="Система: ">
+                                    Система: </p>
+
+                                    <p data-en="Simple Restraint: The grappler swiftly restricts the target's movements, locking them with their arms or entire body.
+                                    The target cannot take any actions except to struggle free by making an opposed roll of Strength + Brawl versus the grappler's Strength + Brawl." 
+                                        data-ru="Простое удержание: Захватывающий стремительно лишает противника свободы движения, блокируя его руками или всей массой тела. 
+                                        Цель не может предпринимать никаких действий, кроме как отчаянно пытаться вырваться из захвата. 
+                                        Для этого она проходит встречную проверку Сила + Драка против Сила + Драка захватывающего.">
+                                    Простое удержание: Захватывающий стремительно лишает противника свободы движения, блокируя его руками или всей массой тела. 
+                                    Цель не может предпринимать никаких действий, кроме как отчаянно пытаться вырваться из захвата. 
+                                    Для этого она проходит встречную проверку Сила + Драка против Сила + Драка захватывающего. </p>
+                                    <ul>
+                                        <li data-en="Success: The target escapes and can act normally." data-ru="Успех: Цель освобождается и может действовать как обычно.">Успех: Цель освобождается и может действовать как обычно.</li>
+                                        <li data-en="Failure: The target remains immobilized until their next turn." data-ru="Провал: Цель остаётся в плену хватки до следующего хода.">Провал: Цель остаётся в плену хватки до следующего хода.</li>
+                                    </ul>
+
+                                    
+                                    <p data-en="Clinch: When restraint escalates into a raw, physical brawl, the combatants enter a vicious clinch. 
+                                    This is no refined technique — it’s an unrelenting struggle to inflict as much damage as possible." 
+                                        data-ru="Клинч: Когда хватка превращается в борьбу, оба бойца вступают в безжалостный клинч. 
+                                        Это не аккуратное боевое искусство, а дикая схватка с единственной целью — нанести как можно больше урона.">
+                                        Клинч: Когда хватка превращается в борьбу, оба бойца вступают в безжалостный клинч. 
+                                        Это не аккуратное боевое искусство, а дикая схватка с единственной целью — нанести как можно больше урона.</p>
+                                    <ul>
+                                        <li data-en="Each turn, both fighters act according to their initiative." data-ru="Каждый ход персонажи действуют согласно своей инициативе.">
+                                            Каждый ход персонажи действуют согласно своей инициативе.</li>
+                                        <li data-en="Damage is dealt automatically, equal to Strength, without needing to roll for accuracy." data-ru="Урон наносится автоматически, равный Силе, без необходимости подтверждать попадание.">
+                                            Урон наносится автоматически, равный Силе, без необходимости подтверждать попадание.</li>
+                                        <li data-en="Breaking the clinch requires an opposed roll of Strength + Brawl versus the opponent." data-ru="Разорвать клинч можно только через встречную проверку Сила + Драка против противника.">
+                                            Разорвать клинч можно только через встречную проверку Сила + Драка против противника.</li>
+                                    </ul>
+                                
                                 <ul>
+                                    <li data-en="Roll: Strength + Brawl" data-ru="Проверка: Сила + Драка"> Сила + Драка </li>
                                     <li data-en="Cost: None" data-ru="Стоимость: Ничего">Стоимость: Ничего</li>
                                     <li data-en="Initiative: -1" data-ru="Инициатива: -1">Инициатива: -1</li>
+                                    <li data-en="Difficulty: Standard" data-ru="Сложность: Стандарт">Сложность: Стандарт</li>
                                     <li data-en="Accuracy: +0" data-ru="Точность: +0">Точность: +0</li>
-                                    <li data-en="Damage: +0" data-ru="Урон: +0">Урон: +0</li>
+                                    <li data-en="Damage: +0 (in clinch mode)" data-ru="Урон: +0 (в режиме клинча)">Урон: +0</li>
                                     <li data-en="Move: +0" data-ru="Передвижение: +0">Передвижение: +0</li>
                                 </ul>
                                 <div class="d-flex justify-content-center">
@@ -226,8 +265,10 @@
                                     Система:
                                 </p>
                                 <ul>
+                                    <li data-en="Roll: Dexterity + Brawl " data-ru="Проверка: Ловкость + Драка"> Проверка: Ловкость + Драка </li>
                                     <li data-en="Cost: None" data-ru="Стоимость: Ничего">Стоимость: Ничего</li>
                                     <li data-en="Initiative: -1" data-ru="Инициатива: -1">Инициатива: -1</li>
+                                    <li data-en="Difficulty: Standard" data-ru="Сложность: Стандарт">Сложность: Стандарт</li>
                                     <li data-en="Accuracy: -1" data-ru="Точность: -1">Точность: -1</li>
                                     <li data-en="Damage: +2" data-ru="Урон: +2">Урон: +2</li>
                                     <li data-en="Move: -1" data-ru="Передвижение: -1">Передвижение: -1</li>
@@ -270,9 +311,11 @@
                                     Система:
                                 </p>
                                 <ul>
+                                    <li data-en="Roll: Dexterity + Brawl " data-ru="Проверка: Ловкость + Драка"> Проверка: Ловкость + Драка </li>
                                     <li data-en="Cost: None" data-ru="Стоимость: Ничего">Стоимость: Ничего</li>
                                     <li data-en="Initiative: +0" data-ru="Инициатива: +0">Инициатива: +0</li>
                                     <li data-en="Accuracy: +0" data-ru="Точность: +0">Точность: +0</li>
+                                    <li data-en="Difficulty: Standard" data-ru="Сложность: Стандарт">Сложность: Стандарт</li>
                                     <li data-en="Damage: +1" data-ru="Урон: +1">Урон: +1</li>
                                     <li data-en="Move: +0" data-ru="Передвижение: +0">Передвижение: +0</li>
                                 </ul>
@@ -315,8 +358,10 @@
                                     Система:
                                 </p>    
                                 <ul>
+                                    <li data-en="Roll: Dexterity + Brawl " data-ru="Проверка: Ловкость + Драка"> Проверка: Ловкость + Драка </li>
                                     <li data-en="Cost: None" data-ru="Стоимость: Ничего">Стоимость: Ничего</li>
                                     <li data-en="Initiative: +1" data-ru="Инициатива: +1">Инициатива: +1</li>
+                                    <li data-en="Difficulty: Standard" data-ru="Сложность: Стандарт">Сложность: Стандарт</li>
                                     <li data-en="Accuracy: +0" data-ru="Точность: +0">Точность: +0</li>
                                     <li data-en="Damage: +1" data-ru="Урон: +1">Урон: +1</li>
                                     <li data-en="Move: +0" data-ru="Передвижение: +0">Передвижение: +0</li>
@@ -360,8 +405,10 @@
                                     Система:
                                 </p>    
                                 <ul>
+                                    <li data-en="Roll: Dexterity + Brawl " data-ru="Проверка: Ловкость + Драка"> Проверка: Ловкость + Драка </li>
                                     <li data-en="Cost: None" data-ru="Стоимость: Ничего">Стоимость: Ничего</li>
                                     <li data-en="Initiative: +3" data-ru="Инициатива: +3">Инициатива: +3</li>
+                                    <li data-en="Difficulty: Standard" data-ru="Сложность: Стандарт">Сложность: Стандарт</li>
                                     <li data-en="Accuracy: +0" data-ru="Точность: +0">Точность: +0</li>
                                     <li data-en="Damage: +0" data-ru="Урон: +0">Урон: +0</li>
                                     <li data-en="Move: +1" data-ru="Передвижение: +1">Передвижение: +1</li>
@@ -401,15 +448,22 @@
                                         data-ru="Маневр, требующий от персонажа полной отдачи процессу скорейшего перемещения по полю боя.">
                                         Маневр, требующий от персонажа полной отдачи процессу скорейшего перемещения по полю боя.
                                     </p>
-                                <p data-en="System:" data-ru="Система:">
+                                <p data-en="System:"
+                                data-ru="Система:">>
                                     Система:
-                                </p>    
+                                </p>
+                                <p data-en="The character gains a movement bonus and adds their Athletics value to the final total." 
+                                    data-ru="Персонаж получает бонус к передвижению, а так же добавляет значение своей Атлетики к итоговому значению.">
+                                     Персонаж получает бонус к передвижению, а так же добавляет значение своей Атлетики к итоговому значению.
+                                </p>   
                                 <ul>
+                                    <li data-en="Roll: N/A" data-ru="Проверка: Не подразумевается"> Проверка: Не подразумевается </li>
                                     <li data-en="Cost: None" data-ru="Стоимость: Ничего">Стоимость: Ничего</li>
                                     <li data-en="Initiative: +3" data-ru="Инициатива: +3">Инициатива: +3</li>
+                                    <li data-en="Difficulty: N/A" data-ru="Сложность: Не подразумевается">Сложность: Не подразумевается</li>
                                     <li data-en="Accuracy: N/A" data-ru="Точность: Не подразумевается">Точность: Не подразумевается</li>
                                     <li data-en="Damage: N/A" data-ru="Урон: Не подразумевается">Урон: Не подразумевается</li>
-                                    <li data-en="Move: +3" data-ru="Передвижение: +3">Передвижение: +3</li>
+                                    <li data-en="Move: +3 + Athletics" data-ru="Передвижение: +3 + Атлетика">Передвижение: +3 + Атлетика</li>
                                 </ul>
                                 <div class="d-flex justify-content-center">
                                     <button class="close-modal" data-en="Close" data-ru="Закрыть">Закрыть</button>
