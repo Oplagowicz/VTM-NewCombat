@@ -38,6 +38,7 @@
     border-width: 4px;
 }
 
+
 .inner-card {
     position: relative;
     height: 100%;
@@ -76,6 +77,54 @@
     height: 250px;
     width: 150px;
 }
+        /* weapon-cards section */
+        .card-weapon {
+            height: 100px;
+            width: 400px;
+            perspective: 1000px;
+            background-color: black;
+            border-style: solid;
+            border-color: black;
+            border-width: 4px;
+            
+        }
+
+        .card-face-weapon {
+            position: absolute;
+            height: 100%;
+            width: 100%;
+            backface-visibility: hidden;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .card-weapon:hover .inner-card {
+            transform: rotateY(180deg);
+        }
+
+        .card-face-weapon > img {
+            height: 100px;
+            width: 400px;
+        }
+
+        .weapon-stats {
+            display: grid;
+            grid-template-columns: repeat(9, 1fr); 
+            grid-template-rows: auto auto;  
+            width: 100%; 
+            text-align: center; 
+            border: 1px solid black; 
+        }
+
+        .weapon-stats > div {
+            border: 2px solid black; 
+            padding: 8px; 
+            background-color: #4B1E1F; 
+            font-family: "TypeWriter", sans-serif; 
+            font-size: 14px; 
+            font-weight: bold; 
+        }
 
 ul {
     list-style-type: none;
@@ -108,6 +157,10 @@ ul {
     font-size: 18px;
     text-align: center;
     position: relative;
+}
+
+.modal-content > p {
+    margin-top: 10px;
 }
 
 .close-modal {

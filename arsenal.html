@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title  data-en="WoD: Arsenal" data-ru="Мир Тьмы: Арсенал">Мир Тьмы: Арсенал</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <link href="./style.css" rel="stylesheet">
+    <link href="./cards.css" rel="stylesheet">
+</head>
+<body>
+
+    <section id="header" class="container-fluid d-flex flex-column flex-lg-row justify-content-between align-items-center">
+        <div class="ankh-container col-lg-2 d-flex justify-content-center mt-2">
+            <img class="ankh" src="./images/AnkhNew.png">
+        </div>
+        <nav class="nav-buttons col-lg-10 d-flex flex-column align-items-center">
+            <div class="main-nav d-flex flex-wrap gap-4 fs-xl-1 fs-lg-2 fs-3 justify-content-center mb-3 ">
+                <a href="./index.html"><button data-en="Main Page" data-ru="Главная Страница">Главная Страница</button></a>
+                <a href="./basics.html"><button data-en="Basics" data-ru="Основы">Основы</button></a>
+                <a href="./armory.html"><button data-en="Armory" data-ru="Оружейная">Оружейная</button></a>
+
+            </div>
+            <div class="language-switcher mt-auto">
+                <button class="lang-btn" onclick="toggleLanguage()" data-en="Русский" data-ru="English">English</button>
+            </div>  
+        </nav>
+    </section>
+
+    <section id="main">
+        <!-- Main Основная часть страницы с текстами или пречислением приемов -->
+        <div id="quote" class="text d-flex flex-wrap gap-2 justify-content-end align-items-end ms-auto me-4 my-4">
+                <h2 data-en="<q>Bolt actions speak louder than words.</q>" data-ru="<q>Щелчок завторва говорит громче слов</q>">Щелчок завторва говорит громче слов</h2>
+                <h3 data-en="— Craig Roberts" data-ru="— Крейг Робертс">— Крейг Робертс</h3>            
+        </div>
+
+        <div class="text card-body">
+
+
+            <div id="one" class="card-item text-center">         
+                <div id="" class="card-weapon">
+                    <div class="inner-card">
+                        <div class="card-face-weapon front">
+                            <img src="./weapons-img/double-barreled-shotgunPNG.png">
+                        </div>
+                        <div class="card-face-weapon back">
+                            <img src="./weapons-img/double-barreled-shotgunPNG.png">
+                        </div>
+                    </div>
+                </div>
+                <p class="card-title text-center" data-en="Double Barreled Shotgun" data-ru="Двуствольное ружьё">Двуствольное ружьё</p> 
+
+                <div class="modal-overlay" style="display: none;">
+                    <div class="modal-content">
+                            
+                        <p data-en="Description" data-ru="Описание:">    
+                            Описание:
+                        </p>    
+                            <p data-en="The 12 Gauge Double-Barreled Shotgun — a weapon of choice for those who don’t play games. Two barrels, two chances to end a fight before it even starts.
+                            It doesn’t care who you are — mortal, Kindred, or something worse — when it speaks, people listen.
+                            The buckshot spreads like whispers in the dark, leaving no room for escape at close range.
+                            It’s loud, it’s messy, and it draws attention, but sometimes... attention is exactly what you want.
+                            Just be quick with the reload — or you'll wish you had been." 
+                            data-ru="Двуствольное ружьё 12 калибра — это не игрушка. Два ствола, два выстрела — два шанса закончить дело, прежде чем оно обернётся для тебя плохо.
+                            Ему плевать, кто ты: смертный, Сородич или что-то похуже. Когда оно заговорит, слушают все.
+                            Дробь разлетается, как шёпот по ночной улице — на ближней дистанции промахнуться невозможно.
+                            Да, оно громкое, да, оно оставляет кровавый беспорядок и привлекает лишние глаза.
+                            Но иногда... тебе это и нужно. Только не тяни с перезарядкой — не успеешь моргнуть, как пожалеешь об этом.">
+                            Двуствольное ружьё 12 калибра — это не игрушка. Два ствола, два выстрела — два шанса закончить дело, прежде чем оно обернётся для тебя плохо.
+                            Ему плевать, кто ты: смертный, Сородич или что-то похуже. Когда оно заговорит, слушают все.
+                            Дробь разлетается, как шёпот по ночной улице — на ближней дистанции промахнуться невозможно.
+                            Да, оно громкое, да, оно оставляет кровавый беспорядок и привлекает лишние глаза.
+                            Но иногда... тебе это и нужно. Только не тяни с перезарядкой — не успеешь моргнуть, как пожалеешь об этом.
+                            </p>
+                        <p data-en="Stats:" data-ru="Характеристика:">
+                            Характеристика:
+                        </p> 
+                            <div class="weapon-stats">
+                                <div data-en="W.Type" data-ru="В.Орж">В.Орж</div>
+                                <div data-en="Difficulty" data-ru="Сложность">Сложность</div>
+                                <div data-en="Range" data-ru="Дальность">Дальность</div>
+                                <div data-en="Rate of Fire" data-ru="Скорострельность">Скорострельность</div>
+                                <div data-en="Concealment" data-ru="Скрытие">Скрытие</div>
+                                <div data-en="Magazine" data-ru="Обойма">Обойма</div>
+                                <div data-en="Initiative" data-ru="Инициатива">Инициатива</div>
+                                <div data-en="Accuracy" data-ru="Точность">Точность</div>
+                                <div data-en="Damage" data-ru="Урон">Урон</div>
+                                
+                                <div data-en="Shotguns" data-ru="Дробовики">Дробовик</div> <!-- Weapon Type -->
+                                <div>6</div> <!-- Difficulty -->
+                                <div data-en="20/SR" data-ru="20/К">20/К</div> <!-- Range -->
+                                <div>++2</div> <!-- Rate of Fire -->
+                                <div data-en="N/L" data-ru="ВК/ПП">ВК/ПП</div> <!-- Concealment -->
+                                <div>2</div> <!-- Magazine -->
+                                <div>-1/+1</div> <!-- Initiative -->
+                                <div>0</div> <!-- Accuracy -->
+                                <div>8</div> <!-- Damage -->
+                            </div>
+                        <p data-en="Modification:" data-ru="Модификация:"> Модификация: </p>
+                            <p data-en="You know, sometimes you don’t need the full length. Chop off those barrels, and you’ve got yourself a sawed-off shotgun
+                            — nasty, compact, and easy to hide. Sure, you lose some range, but the spread at close quarters? Absolutely brutal.
+                            If you decide to modify the weapon, then check the numbers after <q>/</q>." 
+                            data-ru="Иногда тебе не нужен весь этот длинный ствол. Обрежь его — и получишь обрез.
+                            Злобный, компактный, удобно спрятать под пальто.
+                            Да, дальность пострадает, но на ближней дистанции разброс дроби — просто смерть.
+                            Если всё же решишь модифицировать оружие, тогда смотри на цифры после знака <q>/</q>.">
+                            Иногда тебе не нужен весь этот длинный ствол. Обрежь его — и получишь обрез.
+                            Злобный, компактный, удобно спрятать под пальто.
+                            Да, дальность пострадает, но на ближней дистанции разброс дроби — просто смерть.
+                            Если всё же решишь модифицировать оружие, тогда смотри на цифры после знака <q>/</q>."
+                            </p>
+                        <div class="d-flex justify-content-center">
+                            <button class="close-modal" data-en="Close" data-ru="Закрыть">Закрыть</button>
+                        </div>                       
+                    </div>
+                </div>
+            </div>
+
+    <section id="footer">
+        <div class="ankh-container col-lg-2 d-flex justify-content-center mt-2">
+                <img class="ankh" src="./images/SabbatAnkhNew.png">
+        </div>
+        <footer class="text mx-4 my-2"
+                data-en="© 2024 Sparklines Group. This site is created by a fan and intended for non-commercial use only. All rights to the original content and materials related to the World of Darkness belong to their respective copyright holders." 
+                data-ru="© 2024 Sparklines Group. Этот сайт создан фанатом и предназначен исключительно для некоммерческого использования. Все права на оригинальный контент и материалы, связанные с Миром Тьмы, принадлежат их законным правообладателям."> 
+                    © 2024 Sparklines Group. Этот сайт создан фанатом и предназначен исключительно для личного и некоммерческого использования. Все права на оригинальный контент и материалы, связанные с Миром Тьмы, принадлежат их законным правообладателям. 
+        </footer>
+        
+    </section>
+
+
+    <script src="script.js"></script>
+</body>
+</html>
