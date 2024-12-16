@@ -115,6 +115,7 @@
             width: 100%; 
             text-align: center; 
             border: 1px solid black; 
+            margin-bottom: 13px;
         }
 
         .weapon-stats > div {
@@ -159,8 +160,10 @@ ul {
     position: relative;
 }
 
-.modal-content > p {
-    margin-top: 10px;
+.modal-content > header {
+    font-size: 22px;
+    font-weight: bolder;
+    margin-bottom: 10px;
 }
 
 .close-modal {
