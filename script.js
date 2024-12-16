@@ -41,12 +41,12 @@ function changeLanguage(language) {
       const currentDisplay = modalOverlay.style.display; // Сохраняем текущее значение display
       
       if (!event.target.classList.contains("close-modal")) {
-          // Скрываем все другие модальные окна
+          
           document.querySelectorAll(".modal-overlay").forEach(modal => {
               modal.style.display = "none";
           });
   
-          // Проверяем значение и, если оно не "flex", то устанавливаем "flex"
+          
           if (currentDisplay !== "flex") {
               modalOverlay.style.display = "flex";
           }
