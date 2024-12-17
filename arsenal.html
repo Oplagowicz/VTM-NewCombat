@@ -36,19 +36,18 @@
 
         <div class="text card-body">
 
-
             <div id="one" class="card-item text-center">         
                 <div id="" class="card-weapon">
                     <div class="inner-card">
                         <div class="card-face-weapon front">
-                            <img src="./weapons-img/double-barreled-shotgunPNG.png">
+                            <img src="./weapons-img/double-barreled-shotgun2.png">
                         </div>
                         <div class="card-face-weapon back">
-                            <img src="./weapons-img/double-barreled-shotgunPNG.png">
+                            <img src="./weapons-img/sawed-offSH.png">
                         </div>
                     </div>
                 </div>
-                <p class="card-title text-center" data-en="Double Barreled Shotgun" data-ru="Двуствольное ружьё">Двуствольное ружьё</p> 
+                <p class="card-title text-center" data-en="Double-Barrel/Sawed-Off Shotgun" data-ru="Двуствольное ружьё/Обрез">Двуствольное ружьё / Обрез</p> 
 
                 <div class="modal-overlay" style="display: none;">
                     <div class="modal-content">
@@ -102,11 +101,11 @@
                             <p data-en="You know, sometimes you don’t need the full length. Chop off those barrels, and you’ve got yourself a sawed-off shotgun
                             — nasty, compact, and easy to hide. Sure, you lose some range, but the spread at close quarters? Absolutely brutal.
                             If you decide to modify the weapon, then check the numbers after <q>/</q>." 
-                            data-ru="Иногда тебе не нужен весь этот длинный ствол. Обрежь его — и получишь обрез.
+                            data-ru="Иногда тебе не нужен весь этот длинный ствол. Укороти его — и получишь обрез.
                             Злобный, компактный, удобно спрятать под пальто.
                             Да, дальность пострадает, но на ближней дистанции разброс дроби — просто смерть.
                             Если всё же решишь модифицировать оружие, тогда смотри на цифры после знака <q>/</q>.">
-                            Иногда тебе не нужен весь этот длинный ствол. Обрежь его — и получишь обрез.
+                            Иногда тебе не нужен весь этот длинный ствол. Укороти его — и получишь обрез.
                             Злобный, компактный, удобно спрятать под пальто.
                             Да, дальность пострадает, но на ближней дистанции разброс дроби — просто смерть.
                             Если всё же решишь модифицировать оружие, тогда смотри на цифры после знака <q>/</q>."
@@ -117,6 +116,75 @@
                     </div>
                 </div>
             </div>
+        </div>
+
+        <div class="info">
+            <div class="text text-main d-flex flex-wrap justify-content-center align-content-center ms-auto">
+                <h4 class="text-title my-3"  data-en="Quick & Dirty Math" data-ru="Быстрая грязная математика">Быстрая грязная математика</h4>
+                    
+                <p data-en=" To recap, here are the formulas for figuring out the Dice Pool for each stage of an attack. 
+                Modify them however it suits your taste. Don’t worry if they seem a bit intimidating; with practice, 
+                computing Dice Pools should be second nature. Remember that regardless of modifiers, 
+                the minimum Dice Pool for each of these rolls is one die. You can always try." 
+        
+                data-ru="Вкратце, вот формулы для определения пула кубиков для каждой стадии атаки. 
+                Модифицируйте их по своему вкусу. Не волнуйтесь, если они кажутся немного пугающими: 
+                с практикой вычисление пула кубов будет так же естественно, как дышать. 
+                Помните, что независимо от модификаций, минимальный пул кубиков для каждого из этих бросков – один куб. 
+                Всегда можно попробовать.">
+                    Вкратце, вот формулы для определения пула кубиков для каждой стадии атаки. 
+                    Модифицируйте их по своему вкусу. Не волнуйтесь, если они кажутся немного пугающими: 
+                    с практикой вычисление пула кубов будет так же естественно, как дышать. 
+                    Помните, что независимо от модификаций, минимальный пул кубиков для каждого из этих бросков – один куб. 
+                    Всегда можно попробовать.
+                </p>
+                    <ul>
+                        <li>
+                            <p class="text-title-mini my-3" data-en="Initiative:" data-ru="Инициатива:">Инициатива:</p> 
+                            
+                            <p data-en="1d10 + (Dex + Wits) + the maneuver modifier + any other mods" 
+                            data-ru="1д10 + (Ловкость + Смекалка) + модификатор маневра + другие модификаторы">
+                            1д10 + (Ловкость + Смекалка) + модификатор маневра + другие модификаторы</p>
+                        </li>
+                        <li>
+                            <p data-en="Accuracy:" data-ru="Точность:" class="text-title-mini my-3">Точность:</p> 
+        
+                            <p data-en="Dexterity + Abilities* + maneuver modifier - any Health Level penalties = Dice Pool."
+                            data-ru="Ловкость + Способности* + модификация маневра - пенальти от Уровней Здоровья = пул кубов.">
+                            Ловкость + Способности* + модификация маневра - пенальти от Уровней Здоровья = пул кубов.</p>
+                            <p data-en="Abilities:" data-ru="Способности:">Способности:</p>
+                                <ol>
+                                    <li data-en="Athletics for thrown weapons" data-ru="Атлетика для метательного оружия">Атлетика для метательного оружия</li>
+                                    <li data-en="Brawl for melee attacks without melee weapons (clubs, knives, chainsaws, etc.)" 
+                                        data-ru="Драка для рукопашных ударов без холодного оружия (дубины, ножы, бензопилы и т.п.)">
+                                        Драка для рукопашных ударов без холодного оружия (дубины, ножы, бензопилы и т.п.)</li>
+                                    <li data-en="Dodge for defensive actions" data-ru="Уклонение для защитных действий">Уклонение для защитных действий</li>
+                                    <li data-en="Melee for melee weapons" data-ru="Рукопашный бой для холодного оружия">Рукопашный бой для холодного оружия</li>
+                                    <li data-en="Firearms for ranged weapons" data-ru="Стрельба для дальнобойного оружия">Стрельба для дальнобойного оружия</li>
+                                </ol>
+                        </li>
+                        <li>
+                            <p data-en="Damage:" data-ru="Урон:" class="text-title-mini my-3">Урон:</p> 
+        
+                            <p data-en="Damage from Weapon Caliber* + number of successes to hit = Dice Pool."
+                            data-ru="Урона от Калибра Оружия* + кол-во успехов на попадание = пул кубов.">
+                            Урона от Калибра Оружия* + кол-во успехов на попадание = пул кубов.</p>
+                            
+                            <p data-en=" Soaking comes after the character rolls damage."
+                            data-ru="Возможность поглощения урона наступает только после того, как персонаж нанесет урон."> 
+                            >Возможность поглощения урона наступает только после того, как персонаж нанесет урон. 
+                            </p>                            
+                        </li>
+                        <li>
+                            <p data-en="Move:" data-ru="Перемещение:" class="text-title-mini my-3">Перемещение:</p> 
+        
+                            <p data-en="Dexterity + maneuver modifier + any other mods = number of hexes moved per turn"
+                            data-ru="Ловкость + модификация маневра + другие модификаторы = количество гексов, перемещаемых за ход.">
+                            Ловкость + модификация маневра + другие модификаторы = количество гексов, перемещаемых за ход.</p>
+                        </li>
+                    </ul>
+            </div>
+        </div>    
 
     <section id="footer">
         <div class="ankh-container col-lg-2 d-flex justify-content-center mt-2">
