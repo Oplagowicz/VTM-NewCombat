@@ -30,7 +30,7 @@
     <section id="main">
         <!-- Main Основная часть страницы с текстами или пречислением приемов -->
         <div id="quote" class="text d-flex flex-wrap gap-2 justify-content-end align-items-end ms-auto me-4 my-4">
-                <h2 data-en="<q>Bolt actions speak louder than words.</q>" data-ru="<q>Щелчок завторва говорит громче слов</q>">Щелчок завторва говорит громче слов</h2>
+                <h2 data-en="<q>Bolt actions speak louder than words.</q>" data-ru="<q>Щелчок затворва говорит громче слов</q>">Щелчок затворва говорит громче слов</h2>
                 <h3 data-en="— Craig Roberts" data-ru="— Крейг Робертс">— Крейг Робертс</h3>            
         </div>
 
@@ -76,14 +76,14 @@
                         </header> 
                             <div class="weapon-stats">
 
-                                    <div data-en="W.Type" data-ru="В.Орж">В.Орж</div>
-                                    <div data-en="Shotguns" data-ru="Дробовики">Дробовик</div> <!-- Weapon Type -->
+                                    <div data-en="Weapon Type" data-ru="Вид Оружия">Вид Оружия</div>
+                                    <div data-en="Ranged - Shotguns" data-ru="Дальнобойное - Дробовики">Дальнобойное - Дробовики</div> <!-- Weapon Type -->
                                     <div data-en="Difficulty" data-ru="Сложность">Сложность</div>
                                     <div>6</div> <!-- Difficulty -->
                                     <div data-en="Range" data-ru="Дальность">Дальность</div>
-                                    <div data-en="20/SR" data-ru="20/К">20/К</div> <!-- Range -->
+                                    <div data-en="20/C" data-ru="20/К">20/К</div> <!-- Range -->
                                     <div data-en="Rate of Fire" data-ru="Скорострельность">Скорострельность</div>
-                                    <div>++2</div> <!-- Rate of Fire -->
+                                    <div>2/++</div> <!-- Rate of Fire -->
                                     <div data-en="Concealment" data-ru="Скрытие">Скрытие</div>
                                     <div data-en="N/L" data-ru="ВК/ПП">ВК/ПП</div> <!-- Concealment -->
                                     <div data-en="Magazine" data-ru="Обойма">Обойма</div>
@@ -121,70 +121,163 @@
 
         <div class="info">
             <div class="text text-main d-flex flex-wrap justify-content-center align-content-center ms-auto">
-                <h4 class="text-title my-3"  data-en="Quick & Dirty Math" data-ru="Быстрая грязная математика">Быстрая грязная математика</h4>
+                <h4 class="text-title my-3"  data-en="Your Weapon's Capabilities" data-ru="Возможности твоего оружия">Возможности твоего оружия</h4>
+                
+                <div>
+                    <header class="text-title-mini my-3" data-en="Weapon Type" data-ru="Вид оружия">
+                        Вид оружия
+                    </header>
+                    <p data-en="Specifies the category and subtype of weapons: Ranged or Melee." 
+                    data-ru="Отображает категорию оружия: Дальнобойное или Ближнебойное.">
+                        Отображает категорию оружия: Дальнобойное или Ближнебойное.
+                    </p>
+                    <p class="text-subtitle" data-en="Subtypes include:" data-ru="Также указывает подвид оружия:"> 
+                        Также указывает подвид оружия:
+                    </p>
+                            <p data-en=Ranged:" data-ru="Дальнобойное:">Дальнобойное:</p>
+                            <p data-en="Archaic, Handguns, Rifles, Shotguns, Submachine Guns, Assault Rifles, Heavy Weapons." 
+                            data-ru="Архаичные, Пистолеты, Винтовки, Дробовики, Пистолеты-пулемёты, Штурмовые винтовки, Тяжёлое оружие">
+                                Архаичные, Пистолеты, Винтовки, Дробовики, Пистолеты-пулемёты, Штурмовые винтовки, Тяжёлое оружие.</p>
+                            <p data-en="Melee:" data-ru="Ближнебойное:">Ближнебойное:</p>
+                            <p data-en="Axes & Picks, Blades, Blunt Weapons, Fist-Loads, Flexible Weapons, Polearms, Staff." 
+                            data-ru="Топоры и кирки, Клинки, Дробящее оружие, Ударные перчатки, Гибкое оружие, Древковое оружие, Посохи.">
+                                Топоры и кирки, Клинки, Дробящее оружие, Ударные перчатки, Гибкое оружие, Древковое оружие, Посохи. </p>
+
+                    <p data-en="For each dot earned in <q>Firearms</q> or <q>Melee</q>, a character can select a specific subtype to specialize in.
+                        Using weapons the character is not proficient with imposes a +2 difficulty penalty on all rolls.
+                        This rule is optional and applies more often to melee weapons, particularly in Dark Ages settings."
+                    data-ru="При получении каждой точки в навыке <q>Огнестрельное оружие</q> или <q>Ближнебойное оружие</q>, персонаж может выбрать один подвид, которым он умеет владеть.
+                    При использовании оружия, которым персонаж не обучен, к сложности всех бросков добавляется +2.
+                    Это правило опциональное, особенно для ближнебойного оружия.">
+
+                    При получении каждой точки в навыке <q>Огнестрельное оружие</q> или <q>Ближнебойное оружие</q>, персонаж может выбрать один подвид, которым он умеет владеть.
+                    При использовании оружия, которым персонаж не обучен, к сложности всех бросков добавляется +2.
+                    Это правило опциональное, особенно для ближнебойного оружия.
+                    </p>
+
+                    <header class="text-title-mini my-3" data-en="Difficulty" data-ru="Сложность">
+                        Сложность
+                    </header>
+                    <p data-en="The standard difficulty to successfully hit with the weapon." 
+                    data-ru="Стандартная сложность для попадания из конкретного оружия.">
+                    Стандартная сложность для попадания из конкретного оружия.</p>
+
+                    <header class="text-title-mini my-3" data-en="Range" data-ru="Дальность">
+                        Дальность
+                    </header>
+                    <p data-en="Determines the effective range for ranged weapons. Range can be exceeded up to twice the base value, but difficulty increases by +2." 
+                    data-ru="Параметр дальнобойного оружия, который показывает оптимальную дистанцию стрельбы. Возможно превысить дальность до двух раз, но сложность повышается на +2.">
+                    Параметр дальнобойного оружия, который показывает оптимальную дистанцию стрельбы. Возможно превысить дальность до двух раз, но сложность повышается на +2.</p>
+
+                    <header class="text-subtitle" data-en="Cone Range (C):" data-ru="Конусная дальность (К):">Конусная дальность (К):</header>
+                    <p data-en="A special type of range where the weapon affects an area in front of the shooter at close range. 
+                    This range is typically used for shotguns and weapons with a <q>spray effect</q>"
+                    data-ru="Особый тип дальности, при котором оружие поражает область перед стрелком на ближней дистанции. 
+                    Данный параметр часто используется для дробовиков и оружия с эффектом <q>разлёта</q>">
+                        Особый тип дальности, при котором оружие поражает область перед стрелком на ближней дистанции. 
+                        Данный параметр часто используется для дробовиков и оружия с эффектом <q>разлёта</q>.</p>
+
+                        <div class="d-flex flex-wrap justify-content-center align-content-center ms-auto">
+                            <img src="./weapons-img/spray-schemeRU.png"
+                            data-en="./weapons-img/spray-schemeEN.png"
+                            data-ru="./weapons-img/spray-schemeRU.png">
+                        </div>
+                    <p data-en="Area of Effect: In the first two hexes (or equivalent units) the weapon deals full damage. 
+                    With each subsequent step, the area of effect expands by +1 hex on each side. Damage decreases by 2 points for each stage beyond the initial firing point. 
+                    All targets caught in the blast zone take the same number of damage dice (accounting for range penalties), but the rolls are made separately. 
+                    As with a standard shot, the shooter makes a regular roll of <q>Dexterity + Firearms</q>. 
+                    Each success adds 1 die to the weapon's damage pool. To completely dodge such an attack, the target must be able to fully move out of the area of effect, take cover, or drop prone." 
+                    data-ru="Зона поражения: В двух первых гексах (или аналогичных единицах пространства) оружие наносит полный урон.
+                    С каждым последующим шагом зона поражения расширяется на +1 гекс в каждую сторону. Урон уменьшается на 2 единицы за каждый этап от точки выстрела. 
+                    Все попавшие в зону действия выстрела цели получают одинаковое колличество кубов урона (с учетом вычета за дальность), но кидаются они отдельно.
+                    Как и в случае с обычным выстрелом стрелок делает обычную проверку на <q>Ловкость + Огнестрельное Оружие</q>.
+                    Каждый успех добавляет 1 куб в пулл урона оружием. Чтобы полностью увернуться от такой атаки цель должна иметь возможность полностью выйти из зоны действия при уклонении,
+                    спрятаться за укрытие или же упасть на пол.">
+                    Зона поражения: В двух первых гексах (или аналогичных единицах пространства) оружие наносит полный урон.
+                    С каждым последующим шагом зона поражения расширяется на +1 гекс в каждую сторону. Урон уменьшается на 2 единицы за каждый этап от точки выстрела. 
+                    Все попавшие в зону действия выстрела цели получают одинаковое колличество кубов урона (с учетом вычета за дальность), но кидаются они отдельно.
+                    Как и в случае с обычным выстрелом стрелок делает обычную проверку на <q>Ловкость + Огнестрельное Оружие</q>.
+                    Каждый успех добавляет 1 куб в пулл урона оружием. Чтобы полностью увернуться от такой атаки цель должна иметь возможность полностью выйти из зоны действия при уклонении,
+                    спрятаться за укрытие или же упасть на пол.</p>
                     
-                <p data-en=" To recap, here are the formulas for figuring out the Dice Pool for each stage of an attack. 
-                Modify them however it suits your taste. Don’t worry if they seem a bit intimidating; with practice, 
-                computing Dice Pools should be second nature. Remember that regardless of modifiers, 
-                the minimum Dice Pool for each of these rolls is one die. You can always try." 
-        
-                data-ru="Вкратце, вот формулы для определения пула кубиков для каждой стадии атаки. 
-                Модифицируйте их по своему вкусу. Не волнуйтесь, если они кажутся немного пугающими: 
-                с практикой вычисление пула кубов будет так же естественно, как дышать. 
-                Помните, что независимо от модификаций, минимальный пул кубиков для каждого из этих бросков – один куб. 
-                Всегда можно попробовать.">
-                    Вкратце, вот формулы для определения пула кубиков для каждой стадии атаки. 
-                    Модифицируйте их по своему вкусу. Не волнуйтесь, если они кажутся немного пугающими: 
-                    с практикой вычисление пула кубов будет так же естественно, как дышать. 
-                    Помните, что независимо от модификаций, минимальный пул кубиков для каждого из этих бросков – один куб. 
-                    Всегда можно попробовать.
-                </p>
+                    
+                    
+                    
+                    <header class="text-title-mini my-3" data-en="Rate of Fire" data-ru="Скорострельность">
+                        Скорострельность
+                    </header>
+                    <p data-en="The number of shots a weapon can fire in a single turn." 
+                    data-ru="Количество выстрелов, которые оружие может сделать за один ход.">
+                    Количество выстрелов, которые оружие может сделать за один ход. </p>
+                    <p data-en="Modifiers:" data-ru="Модификаторы:">
+                        Модификаторы:
+                    </p>
                     <ul>
-                        <li>
-                            <p class="text-title-mini my-3" data-en="Initiative:" data-ru="Инициатива:">Инициатива:</p> 
-                            
-                            <p data-en="1d10 + (Dex + Wits) + the maneuver modifier + any other mods" 
-                            data-ru="1д10 + (Ловкость + Смекалка) + модификатор маневра + другие модификаторы">
-                            1д10 + (Ловкость + Смекалка) + модификатор маневра + другие модификаторы</p>
-                        </li>
-                        <li>
-                            <p data-en="Accuracy:" data-ru="Точность:" class="text-title-mini my-3">Точность:</p> 
-        
-                            <p data-en="Dexterity + Abilities* + maneuver modifier - any Health Level penalties = Dice Pool."
-                            data-ru="Ловкость + Способности* + модификация маневра - пенальти от Уровней Здоровья = пул кубов.">
-                            Ловкость + Способности* + модификация маневра - пенальти от Уровней Здоровья = пул кубов.</p>
-                            <p data-en="Abilities:" data-ru="Способности:">Способности:</p>
-                                <ol>
-                                    <li data-en="Athletics for thrown weapons" data-ru="Атлетика для метательного оружия">Атлетика для метательного оружия</li>
-                                    <li data-en="Brawl for melee attacks without melee weapons (clubs, knives, chainsaws, etc.)" 
-                                        data-ru="Драка для рукопашных ударов без холодного оружия (дубины, ножы, бензопилы и т.п.)">
-                                        Драка для рукопашных ударов без холодного оружия (дубины, ножы, бензопилы и т.п.)</li>
-                                    <li data-en="Dodge for defensive actions" data-ru="Уклонение для защитных действий">Уклонение для защитных действий</li>
-                                    <li data-en="Melee for melee weapons" data-ru="Рукопашный бой для холодного оружия">Рукопашный бой для холодного оружия</li>
-                                    <li data-en="Firearms for ranged weapons" data-ru="Стрельба для дальнобойного оружия">Стрельба для дальнобойного оружия</li>
-                                </ol>
-                        </li>
-                        <li>
-                            <p data-en="Damage:" data-ru="Урон:" class="text-title-mini my-3">Урон:</p> 
-        
-                            <p data-en="Damage from Weapon Caliber* + number of successes to hit = Dice Pool."
-                            data-ru="Урона от Калибра Оружия* + кол-во успехов на попадание = пул кубов.">
-                            Урона от Калибра Оружия* + кол-во успехов на попадание = пул кубов.</p>
-                            
-                            <p data-en=" Soaking comes after the character rolls damage."
-                            data-ru="Возможность поглощения урона наступает только после того, как персонаж нанесет урон."> 
-                            >Возможность поглощения урона наступает только после того, как персонаж нанесет урон. 
-                            </p>                            
-                        </li>
-                        <li>
-                            <p data-en="Move:" data-ru="Перемещение:" class="text-title-mini my-3">Перемещение:</p> 
-        
-                            <p data-en="Dexterity + maneuver modifier + any other mods = number of hexes moved per turn"
-                            data-ru="Ловкость + модификация маневра + другие модификаторы = количество гексов, перемещаемых за ход.">
-                            Ловкость + модификация маневра + другие модификаторы = количество гексов, перемещаемых за ход.</p>
-                        </li>
+                        <li data-en="++ — the weapon can fire two rounds simultaneously (for double-barreled weapons)." 
+                        data-ru="++ — оружие может выстрелить двумя зарядами одновременно (для двуствольного оружия)."> ++ — оружие может выстрелить двумя зарядами одновременно (для двуствольного оружия).</li>
+                        <li data-en="3B — the weapon can fire short bursts." 
+                        data-ru="КО — оружие может стрелять короткими очередями">КО — оружие может стрелять короткими очередями</li>
+                        <li data-en="AF — the weapon can fire long bursts (including short bursts)." 
+                        data-ru="ДО — оружие может стрелять длинными очередями (короткая очередь включительно)">ДО — оружие может стрелять длинными очередями (короткая очередь включительно)</li>
+                        <li data-en="OAF — the weapon fires only long bursts (e.g., miniguns and heavy machine guns)." 
+                        data-ru="ТДО — оружие стреляет исключительно длинными очередями (например, миниганы и тяжёлые пулемёты.)">ТДО — оружие стреляет исключительно длинными очередями (например, миниганы и тяжёлые пулемёты.</li>
                     </ul>
-            </div>
+
+                    
+                    <header class="text-title-mini my-3" data-en="Concealment" data-ru="Скрытие">
+                        Скрытие
+                    </header>
+                    <p data-en="Specifies how easily the weapon can be hidden:" 
+                    data-ru="Возможность скрыть оружие:">
+                    Возможность скрыть оружие: </p>
+                    <ul>
+                        <li data-en="P — Palm/Pocket (easily hidden)." 
+                        data-ru="ВК — Можно спрятать в кармане"> ВК — Можно спрятать в кармане</li>
+                        <li data-en="J — Jacket (hidden under a coat)." 
+                        data-ru="ПК — Можно спрятать под курткой">ПК — Можно спрятать под курткой</li>
+                        <li data-en="L — Long Coat (requires a trench coat or similar)." 
+                        data-ru="ПП — Можно спрятать под плащом">ПП — Можно спрятать под плащом</li>
+                        <li data-en="N — Not concealable." 
+                        data-ru="Н — Скрытное ношение невозможно">Н — Скрытное ношение невозможно</li>
+                    </ul>
+
+                    <header class="text-title-mini my-3" data-en="Magazine" data-ru="Обойма">
+                        Обойма
+                    </header>
+                    <p data-en="The number of shots a weapon can fire in a single turn." 
+                    data-ru="Количество патронов, которые умещаются в оружии до перезарядки.">
+                    The number of rounds the weapon can hold before reloading. </p>
+
+
+                    <header class="text-title-mini my-3" data-en="Initiative" data-ru="Инициатива">
+                        Инициатива
+                    </header>
+                    <p data-en="Initiative modifier when using the weapon." 
+                     data-ru="Модификатор инициативы при использовании оружия.">
+                     Модификатор инициативы при использовании оружия. </p>
+
+                     <header class="text-title-mini my-3" data-en="Accuracy" data-ru="Точность">
+                        Точность
+                    </header>
+                    <p data-en="Accuracy modifier applied during attacks." 
+                     data-ru="Модификатор точности при стрельбе или ударе.">
+                     Модификатор точности при стрельбе или ударе.</p>
+
+                     <header class="text-title-mini my-3" data-en="Damage" data-ru="Урон">
+                        Урон
+                    </header>
+                    <p data-en="Determines the dice pool for damage upon a successful hit. Ranged weapons deal lethal damage to mortals.
+                    For vampires and other mystical creatures, they deal bashing damage unless vulnerable areas (e.g., head, heart) are targeted, which then inflicts lethal damage." 
+                     data-ru="Количество кубов на урон при попадании оружием. Огнестрельное оружие наносит смертельный урон смертным.
+                     Для вампиров и мистических существ оно наносит ударный урон, если не были поражены уязвимые точки (голова, сердце и т.п.), где урон становится летальным.">
+                     Количество кубов на урон при попадании оружием. Огнестрельное оружие наносит смертельный урон смертным.
+                     Для вампиров и мистических существ оно наносит ударный урон, если не были поражены уязвимые точки (голова, сердце и т.п.), где урон становится летальным.</p>
+                </div>
+
+
+
+                    
+
         </div>    
 
     <section id="footer">

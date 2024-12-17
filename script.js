@@ -22,6 +22,11 @@ function changeLanguage(language) {
   elements.forEach(element => {
     element.innerHTML = element.getAttribute(`data-${language}`);
   });
+
+  const images = document.querySelectorAll("img[data-en][data-ru]");
+  images.forEach(img => {
+      img.src = img.getAttribute(`data-${language}`);
+  });
 }
   
   document.querySelectorAll(".card-item").forEach((card) => {
