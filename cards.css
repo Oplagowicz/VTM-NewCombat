@@ -109,7 +109,7 @@
 
         .weapon-stats {
             display: grid;
-            grid-template-columns: repeat(9, 1fr); 
+            grid-template-columns: repeat(2, 1fr); 
             grid-template-rows: auto auto;  
             width: 100%; 
             text-align: center; 
@@ -118,7 +118,7 @@
         }
 
         .weapon-stats > div {
-            border: 2px solid black; 
+            border: 1px solid black; 
             padding: 8px; 
             background-color: #4B1E1F; 
             font-family: "TypeWriter", sans-serif; 
