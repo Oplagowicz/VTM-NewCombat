@@ -46,7 +46,7 @@
                         </div>
                     </div>
                 </div>
-                <p class="card-title text-center" data-en="Shot" data-ru="Выстрел">Выстрел</p> 
+                <p class="card-title text-center" data-en="Shot" data-ru="Обычный выстрел">Обычный выстрел</p> 
 
                 <div class="modal-overlay" style="display: none;">
                     <div class="modal-content">
@@ -72,10 +72,10 @@
                         <ul> <!-- Параметры карты -->
                             <li data-en="Roll: Dexterity + Firearms" data-ru="Проверка: Ловкость + Стрельба"> Проверка: Ловкость + Стрельба </li>
                             <li data-en="Cost: None" data-ru="Стоимость: Ничего">Стоимость: Ничего</li>
-                            <li data-en="Initiative: +0" data-ru="Инициатива: +0">Инициатива: +0</li>
+                            <li data-en="Initiative: +1" data-ru="Инициатива: +1">Инициатива: +1</li>
                             <li data-en="Difficulty: Standard" data-ru="Сложность: Стандарт">Сложность: Стандарт</li>
                             <li data-en="Accuracy: +0" data-ru="Точность: +0">Точность: +0</li>
-                            <li data-en="Damage: W.Caliber*" data-ru="Урон: Калибр Орж.*">Урон: Калибр Орж.*</li>
+                            <li data-en="Damage: Weapon Damage*" data-ru="Урон: Урон оружия*">Урон: Урон оружия*</li>
                             <li data-en="Move: +0" data-ru="Передвижение: +0">Передвижение: +0</li>
                         </ul>
                         <div class="d-flex justify-content-center">
@@ -101,34 +101,42 @@
                 <div class="modal-overlay" style="display: none;">
                     <div class="modal-content">
                         <ul>
-                            <li data-en="Prerequisites: None" data-ru="Требования: Сила 2, Стрельба 2">Требования: Сила 2, Стрельба 2</li>
+                            <li data-en="Prerequisites: Strength 2, Firearms 2" data-ru="Требования: Сила 2, Стрельба 2">Требования: Сила 2, Стрельба 2</li>
                             <li data-en="Power Points: None" data-ru="Очки Мощи: Ничего">Очки Мощи: Ничего</li>
                         </ul>
                             
                         <header data-en="Description" data-ru="Описание:">    
                             Описание:
                         </header>    
-                            <p data-en="" data-ru="Персонаж выпускает в цель весь магазин полевая врагов градом из свинца.">
+                            <p data-en="The weapon unloads its entire ammunition clip in one attack" 
+                            data-ru="Персонаж выпускает весь магазин полевая врагов градом из свинца.">
                                 Персонаж выпускает в цель весь магазин полевая врагов градом из свинца
                             </p>
                         <header data-en="System:" data-ru="Система:">
                             Система:
                         </header> 
                             <p  data-en="The attacker makes a single roll, adding 10 dice to her accuracy. 
-                                        However, the attack roll is at a +2 difficulty due to the weapon’s recoil. 
+                                        However, the attack roll is at a +2 difficulty due to the weapon’s recoil.
+                                        An attacker using automatic fire may not target a specific area of the body. 
+                                        The attack creates a line of fire three hexes wide, allowing more than one target to be hit. 
+                                        For every additional success after the first, the attacker can choose additional victims within the line of fire and split the damage dice pool between them. 
                                         Extra successes add to the damage  dice  pool,  which  is  still  treated  as  equivalent to one bullet. 
                                         An attacker using automatic fire may not target a specific area of the body.
                                         This attack is permissible only if the weapon’s clip is at least half-full to begin with."
-                                data-ru="При  этом он проходит одну провер‑ку атаки, но  её пул увеличивается на  десять  d10,
+                                data-ru="Персонаж проходит одну проверку атаки, но её пул увеличивается на  десять  d10,
                                 а сложность возрастает на два пункта из‑за сильной
-                                отдачи. Дополнительные успехи увеличивают пул
+                                отдачи. При этом он не выбирает одну конкретную цель, а скорее выбирает направление стрельбы, проводя линию в три гекса шириной. Таким образом в зону огня
+                                может попасть больше одной цели. За каждый дополнительный упех на попадание после первого, персонаж может выбрать дополнительных жертв в линии стрельбы
+                                и на этапе проверки урона разделить пулл урона между жертвами. Дополнительные успехи увеличивают пул
                                 проверки урона, как  если бы это был простой одиночный выстрел. Персонаж, который ведёт огонь
                                 длинными очередями, не может целиться в определённую часть тела жертвы.
                                 Персонаж может выпустить длинную очередь,
                                 только если магазин его оружия полон хотя бы на половину.">
-                                При  этом он проходит одну провер‑ку атаки, но  её пул увеличивается на  десять  d10,
+                                Персонаж проходит одну проверку атаки, но её пул увеличивается на  десять  d10,
                                 а сложность возрастает на два пункта из‑за сильной
-                                отдачи. Дополнительные успехи увеличивают пул
+                                отдачи. При этом он не выбирает одну конкретную цель, а скорее выбирает направление стрельбы, проводя линию в три гекса шириной. Таким образом в зону огня
+                                может попасть больше одной цели. За каждый дополнительный упех на попадание после первого, персонаж может выбрать дополнительных жертв в линии стрельбы
+                                и на этапе проверки урона разделить пулл урона между жертвами. Дополнительные успехи увеличивают пул
                                 проверки урона, как  если бы это был простой одиночный выстрел. Персонаж, который ведёт огонь
                                 длинными очередями, не может целиться в определённую часть тела жертвы.
                                 Персонаж может выпустить длинную очередь,
@@ -138,11 +146,140 @@
                         <ul> <!-- Параметры карты -->
                             <li data-en="Roll: Dexterity + Firearms" data-ru="Проверка: Ловкость + Стрельба"> Проверка: Ловкость + Стрельба </li>
                             <li data-en="Cost: None" data-ru="Стоимость: Ничего">Стоимость: Ничего</li>
-                            <li data-en="Initiative: -1" data-ru="Инициатива: -1">Инициатива: -1</li>
+                            <li data-en="Initiative: -2" data-ru="Инициатива: -2">Инициатива: -2</li>
                             <li data-en="Difficulty: +2" data-ru="Сложность: +2">Сложность: +2</li>
                             <li data-en="Accuracy: +10" data-ru="Точность: +10">Точность: +10</li>
-                            <li data-en="Damage: W.Caliber*" data-ru="Урон: Калибр Орж.*">Урон: Калибр Орж.*</li>
+                            <li data-en="Damage: Weapon Damage*" data-ru="Урон: Урон оружия*">Урон: Урон оружия*</li>
                             <li data-en="Move: -2" data-ru="Передвижение: -2">Передвижение: -2</li>
+                        </ul>
+                        <div class="d-flex justify-content-center">
+                            <button class="close-modal" data-en="Close" data-ru="Закрыть">Закрыть</button>
+                        </div>                       
+                    </div>
+                </div>
+            </div>
+
+
+            <div id="three" class="card-item text-center">         
+                <div id="" class="card">
+                    <div class="inner-card">
+                        <div class="card-face front">
+                            <img src="./action-cards/three-round burst.webp">
+                        </div>
+                        <div class="card-face back">
+                            <img src="./action-cards/three-round burst.webp">
+                        </div>
+                    </div>
+                </div>
+                <p class="card-title text-center" data-en="Three-Round Burst" data-ru="Короткая очередь">Короткая очередь</p> 
+
+                <div class="modal-overlay" style="display: none;">
+                    <div class="modal-content">
+                        <ul>
+                            <li data-en="Prerequisites: Firearms 2" data-ru="Требования: Стрельба 2">Требования: Стрельба 2</li>
+                            <li data-en="Power Points: None" data-ru="Очки Мощи: Ничего">Очки Мощи: Ничего</li>
+                        </ul>
+                            
+                        <header data-en="Description" data-ru="Описание:">    
+                            Описание:
+                        </header>    
+                            <p data-en="The character fires short bursts of three bullets at a time." 
+                            data-ru="Персонаж стреляет короткими очередями по три пули за раз">
+                                Персонаж стреляет короткими очередями по три пули за раз
+                            </p>
+                        <header data-en="System:" data-ru="Система:">
+                            Система:
+                        </header> 
+                            <p  data-en=" The attacker gains two additional dice on a single attack roll, and expends three 
+                            shots from the weapon’s clip. Only certain weapons 
+                            may perform this maneuver. Attacks are made at +1 difficulty 
+                            due to recoil. As with automatic fire, the damage dice 
+                            pool is based on one bullet from the weapon in ques
+                            tion."
+                                data-ru="Персонаж тратит три патрона за одну атаку, но взамен увеличивает пул 
+                                проверки атаки на два d10. Не все виды оружия 
+                                имеют такой режим стрельбы. Сложность проверки 
+                                атаки возрастает на один пункт из‑за отдачи. Дополнительные успехи увеличивают пул проверки 
+                                урона, как если бы это был простой одиночный выстрел.">
+                                Персонаж тратит три патрона за одну атаку, но взамен увеличивает пул 
+                                проверки атаки на два d10. Не все виды оружия 
+                                имеют такой режим стрельбы. Сложность проверки 
+                                атаки возрастает на один пункт из‑за отдачи. До
+                                полнительные успехи увеличивают пул проверки 
+                                урона, как если бы это был простой одиночный 
+                                выстрел.
+                            </p> 
+
+                        <ul> <!-- Параметры карты -->
+                            <li data-en="Roll: Dexterity + Firearms" data-ru="Проверка: Ловкость + Стрельба"> Проверка: Ловкость + Стрельба </li>
+                            <li data-en="Cost: None" data-ru="Стоимость: Ничего">Стоимость: Ничего</li>
+                            <li data-en="Initiative: +0" data-ru="Инициатива: +0">Инициатива: +0</li>
+                            <li data-en="Difficulty: +1" data-ru="Сложность: +1">Сложность: +1</li>
+                            <li data-en="Accuracy: +2" data-ru="Точность: +2">Точность: +2</li>
+                            <li data-en="Damage: Weapon Damage*" data-ru="Урон: Урон оружия*">Урон: Урон оружия*</li>
+                            <li data-en="Move: +0" data-ru="Передвижение: +0">Передвижение: +0</li>
+                        </ul>
+                        <div class="d-flex justify-content-center">
+                            <button class="close-modal" data-en="Close" data-ru="Закрыть">Закрыть</button>
+                        </div>                       
+                    </div>
+                </div>
+            </div>
+
+            <div id="four" class="card-item text-center">         
+                <div id="" class="card">
+                    <div class="inner-card">
+                        <div class="card-face front">
+                            <img src="./action-cards/aiming2New.jpg">
+                        </div>
+                        <div class="card-face back">
+                            <img src="./action-cards/aiming2New.jpg">
+                        </div>
+                    </div>
+                </div>
+                <p class="card-title text-center" data-en="Aiming" data-ru="Прицеливание">Прицеливание</p> 
+
+                <div class="modal-overlay" style="display: none;">
+                    <div class="modal-content">
+                        <ul>
+                            <li data-en="Prerequisites: Firearms 1" data-ru="Требования: Стрельба 1">Требования: Стрельба 1</li>
+                            <li data-en="Power Points: None" data-ru="Очки Мощи: Ничего">Очки Мощи: Ничего</li>
+                        </ul>
+                            
+                        <header data-en="Description" data-ru="Описание:">    
+                            Описание:
+                        </header>    
+                            <p data-en="The character fires short bursts of three bullets at a time." 
+                            data-ru="Персонаж стреляет короткими очередями по три пули за раз">
+                                Персонаж концентрируется на цели, готовясь к точному выстрелу.
+                            </p>
+                        <header data-en="System:" data-ru="Система:">
+                            Система:
+                        </header> 
+                            <p  data-en=" The attacker gains two additional dice on a single attack roll, and expends three 
+                            shots from the weapon’s clip. Only certain weapons 
+                            may perform this maneuver. Attacks are made at +1 difficulty 
+                            due to recoil. As with automatic fire, the damage dice 
+                            pool is based on one bullet from the weapon in ques
+                            tion."
+                                data-ru="Персонаж тратит три патрона за одну атаку, но взамен увеличивает пул 
+                                проверки атаки на два d10. Не все виды оружия 
+                                имеют такой режим стрельбы. Сложность проверки 
+                                атаки возрастает на один пункт из‑за отдачи. Дополнительные успехи увеличивают пул проверки 
+                                урона, как если бы это был простой одиночный выстрел.">
+                                Персонаж тратит полный ход на наведение оружия на конкретную цель при этом делает проверку на Внимательность + Стрельба. 
+                                Каждый успех добавляет +1 к Точности следующего выстрела. Бонус к Точности не может привешать Внимательность персонажа.
+                                Персонаж не может целиться в цель, которая прошла больше чем Смекалка * 2 персонажа гексов в ход. Сложность может меняться в зависимости от условий стрельбы. 
+                            </p> 
+
+                        <ul> <!-- Параметры карты -->
+                            <li data-en="Roll: Perception + Firearms" data-ru="Проверка: Внимательность + Стрельба"> Проверка: Внимательность + Стрельба </li>
+                            <li data-en="Cost: None" data-ru="Стоимость: Ничего">Стоимость: Ничего</li>
+                            <li data-en="Initiative: +0" data-ru="Инициатива: +0">Инициатива: +0</li>
+                            <li data-en="Difficulty: +0" data-ru="Сложность: +0">Сложность: +0</li>
+                            <li data-en="Accuracy: None" data-ru="Точность: Ничего">Точность: Ничего</li>
+                            <li data-en="Damage: None" data-ru="Урон: Ничего">Урон: Ничего</li>
+                            <li data-en="Move: 1" data-ru="Передвижение: 1">Передвижение: 1</li>
                         </ul>
                         <div class="d-flex justify-content-center">
                             <button class="close-modal" data-en="Close" data-ru="Закрыть">Закрыть</button>
@@ -204,14 +341,23 @@
                         <li>
                             <p data-en="Damage:" data-ru="Урон:" class="text-title-mini my-3">Урон:</p> 
         
-                            <p data-en="Damage from Weapon Caliber* + number of successes to hit = Dice Pool."
-                            data-ru="Урона от Калибра Оружия* + кол-во успехов на попадание = пул кубов.">
-                            Урона от Калибра Оружия* + кол-во успехов на попадание = пул кубов.</p>
+                            <p data-en="Weapon Damage** + number of successes to hit = Dice Pool."
+                            data-ru="Урон оружия* + кол-во успехов на попадание = пул кубов.">
+                            Урон оружия* + кол-во успехов на попадание = пул кубов.</p>
+
                             
                             <p data-en=" Soaking comes after the character rolls damage."
                             data-ru="Возможность поглощения урона наступает только после того, как персонаж нанесет урон."> 
                             >Возможность поглощения урона наступает только после того, как персонаж нанесет урон. 
-                            </p>                            
+                            </p>
+                            
+                            <p data-en="*Weapon Damage*: The weapon's damage parameter should be checked directly in the weapon's stats. 
+                            Make sure to apply all caliber features and additional modifiers when performing any action involving this weapon." 
+                            data-ru="*Урон оружия*: Урон оружия необходимо проверять непосредственно в параметрах самого оружия. 
+                            Учитывайте все особенности калибра и дополнительные модификаторы при совершении любого действия, связанного с данным оружием.">
+                            Урон оружия*: Урон оружия необходимо проверять непосредственно в параметрах самого оружия. 
+                            Учитывайте все особенности калибра и дополнительные модификаторы при совершении любого действия, связанного с данным оружием.
+                            </p>
                         </li>
                         <li>
                             <p data-en="Move:" data-ru="Перемещение:" class="text-title-mini my-3">Перемещение:</p> 
