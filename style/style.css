@@ -1,0 +1,182 @@
+        @font-face {
+            font-family: "TypeWriter";
+            src: url('../Fonts/ofont.ru_X\ Typewriter.ttf') format('truetype');
+        }
+        
+        /* Возможно позже поменять с body на другой селектор, более локальный */
+        body {
+            background: linear-gradient(300deg, #8A0007, #752F31, #000000);
+            background-size: 500% 100%;
+            animation: gradient-animation 14s ease infinite;
+        }
+
+        @keyframes gradient-animation {
+            0% {
+              background-position: 0% 50%;
+            }
+            50% {
+              background-position: 100% 50%;
+            }
+            100% {
+              background-position: 0% 50%;
+            }
+          }
+          
+          #header {
+            padding: 0;
+            margin: 0;
+        }
+
+
+      .ankh-container {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+
+      .nav-buttons {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 20px;
+        justify-content: center;
+        align-items: center;
+    }
+
+      .ankh {
+        max-height: 40vh;
+    }
+
+        button {
+          width: auto;
+          height: 60px;
+          padding: 2;
+          background-color: #050801;
+          color: #A30003;
+          font-family: "TypeWriter", sans-serif;
+          font-weight: bold;
+          border: none;
+          border-radius: 10px;
+          letter-spacing: 4px;
+          overflow: hidden;
+          cursor: pointer;
+          transition: background-size 0.4s ease, transform 0.4s ease;
+          background-image: url('./images/FangsPng.png');
+          background-size: 0%;
+          background-position: center;
+          background-repeat: no-repeat;
+        }
+
+        button:hover {
+            background: #26001b;
+            color: #00EB68;
+            box-shadow: none;
+            background-image: url('./images/FangsPng.png'); 
+            background-size: 120%;
+            background-position: center;
+            background-repeat: no-repeat;
+
+            -ms-transform: scale(1.1);
+            -moz-transform: scale(1.1);
+            -webkit-transform: scale(1.1);
+            -o-transform: scale(1.1);
+            transform: scale(1.1);
+
+            -moz-transition: all 1.5s;
+            -webkit-transition: all 1.5s;
+            -o-transition: all 1.5s;
+            transition: all 1.5s;
+      }
+
+        .lang-btn {
+          width: 150px;
+          height: 40px;
+          font-size: 1em;
+          justify-content: start;
+      }
+
+      /* white text #F5F5F5*/
+      
+
+      .text {
+        color: #F5F5F5;
+        text-shadow: 
+        2px 0px black,
+        2px 2px black,
+        0px 2px black,
+        -1px 0px black,
+        0px -1px black,
+        -1px -1px black,
+        0 0 1em black,
+        0 0 0.8em black,
+        0 0 0.5em black,  
+        0 0 0.2em black;
+        
+        font-family: "TypeWriter", sans-serif;
+      }
+
+      .text-title {
+        font-weight: bolder;
+        font-size: 33px;
+      }
+
+      .text-title-mini {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-weight: bolder;
+        font-size: 28px;
+        margin: 15px;
+      }
+
+      .text-subtitle {
+        font-weight: bolder;
+      }
+
+      #quote {
+        width: 50%;
+        margin: 0 auto; /* Центрирует quote */
+        padding: 10px; /* Внутренние отступы */
+      }
+
+      .text-main {
+        width: 80%;
+        font-size: 22px;
+        margin: 0 auto;
+      }
+
+      .info {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: center;
+      }
+      
+      a {
+        color: inherit; 
+        text-decoration: none; 
+        cursor: pointer;
+        font-weight: bolder;
+        transition: 1s;
+    }
+    
+      a:hover {
+        transform: scale(1.1);
+        transition: 1s;
+      }
+
+
+
+      @media (max-width: 767px) {
+        #quote {
+            width: 90%;
+            padding: 10px;
+        }
+    
+        .text-main {
+            width: 90%;
+            padding: 10px;
+            margin: 10px 0;
+        }
+
+
+    }

@@ -1,9 +1,9 @@
-const currentYear = new Date().getFullYear();
+document.addEventListener('DOMContentLoaded', () => {
+  const year = String(new Date().getFullYear());
+  document.querySelectorAll('[data-year-placeholder]').forEach(el => {
 
-const footer = document.querySelector("footer");
-
-if (footer) {
-  footer.innerHTML = footer.innerHTML.replace(/!currentYear/g, currentYear);
-  footer.dataset.en = footer.dataset.en.replace(/!currentYear/g, currentYear);
-  footer.dataset.ru = footer.dataset.ru.replace(/!currentYear/g, currentYear);
-};
+    el.innerHTML = el.innerHTML.replace(/YYYY/g, year);
+    if (el.dataset.en) el.dataset.en = el.dataset.en.replace(/YYYY/g, year);
+    if (el.dataset.ru) el.dataset.ru = el.dataset.ru.replace(/YYYY/g, year);
+  });
+});
