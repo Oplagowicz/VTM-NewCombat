@@ -70,8 +70,8 @@
             background: #26001b;
             color: #00EB68;
             box-shadow: none;
-            background-image: url('./images/FangsPng.png'); 
-            background-size: 120%;
+            background-image: url('../images/FangsPng.png'); 
+            background-size: 100%;
             background-position: center;
             background-repeat: no-repeat;
 

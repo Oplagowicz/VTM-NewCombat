@@ -12,7 +12,7 @@
     }
 
     card.addEventListener("click", (event) => {
-      // Проверяем, что клик происходит на карточке, а не на кнопке "Закрыть"
+      // Проверяем, что клик происходит на карточке
       const currentDisplay = modalOverlay.style.display; // Сохраняем текущее значение display
       
       if (!event.target.classList.contains("close-modal")) {
