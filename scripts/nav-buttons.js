@@ -3,7 +3,8 @@ const navRoutes = {
     "basics_id": "./basics.html",
     "armory_id": "./armory.html",
     "arsenal_id": "./arsenal.html",
-    "main_id": "./index.html"
+    "main_id": "./index.html",
+    "playroom_id": "./playroom.html"
 };
 
     document.querySelectorAll('.main-nav button').forEach( (btn) => {
